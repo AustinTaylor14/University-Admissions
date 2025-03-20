@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fawson University - Apply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font appropriate to a university audience -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Link to compiled CSS (from SCSS) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- 1x, 2x, 3x responsive logo -->
+      <img 
+        src="images/fawson-logo@1.png" 
+        srcset="images/fawson-logo@2x.png 2x, images/fawson-logo@3x.png 3x" 
+        alt="Fawson University Logo" 
+        class="logo"
+      />
+      <h1>Fawson University</h1>
+      <nav>
+        <!-- Small screen skip link -->
+        <a href="#page-bottom" class="skip-link">Skip to Page Bottom</a>
+        <ul>
+          <li><a href="#">Students</a></li>
+          <!-- Activate the current page by adding "active" class -->
+          <li><a href="#" class="active">Apply</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Tuition</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Apply</h2>
+    <p>
+      Thank you for your interest in Fawson University! As part of the application process, 
+      you must create an account in order to track your admission documents and receive 
+      information from us. Sections with an asterisk (<span class="required">*</span>) are 
+      required information. If you have any questions, please contact the Admissions Office 
+      at 1-800-555-1234.
+    </p>
+
+    <form action="#" method="POST" aria-labelledby="apply-form">
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div class="form-group">
+          <label for="firstName">First Name <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            required 
+            aria-required="true"
+          >
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            required 
+            aria-required="true"
+          >
+        </div>
+        <div class="form-group">
+          <label for="cellPhone">Cell Phone <span class="required">*</span></label>
+          <input 
+            type="tel" 
+            id="cellPhone" 
+            name="cellPhone" 
+            required 
+            aria-required="true" 
+            placeholder="987-555-1234"
+          >
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            aria-required="true" 
+            placeholder="john@gmail.com"
+          >
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input 
+            type="text" 
+            id="address" 
+            name="address"
+          >
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input 
+            type="text" 
+            id="city" 
+            name="city"
+          >
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input 
+            type="text" 
+            id="state" 
+            name="state"
+          >
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip</label>
+          <input 
+            type="text" 
+            id="zip" 
+            name="zip"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Communication Preferences -->
+      <fieldset>
+        <legend>Communication Preferences</legend>
+        <div class="form-group-radio">
+          <label>
+            <input 
+              type="radio" 
+              name="communication" 
+              value="email" 
+              checked
+            > 
+            Email
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="communication" 
+              value="phone"
+            > 
+            Phone
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="communication" 
+              value="text"
+            > 
+            Text
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Previous School -->
+      <fieldset>
+        <legend>Previous School Information</legend>
+        <div class="form-group">
+          <label for="previousSchool">Previous School</label>
+          <select id="previousSchool" name="previousSchool">
+            <option value="">Please Select</option>
+            <option value="School A">School A</option>
+            <option value="School B">School B</option>
+            <option value="School C">School C</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gradDate">High School Graduation Date</label>
+          <input 
+            type="date" 
+            id="gradDate" 
+            name="gradDate"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Education Completed -->
+      <fieldset>
+        <legend>Education Completed</legend>
+        <div class="form-group-checkbox">
+          <label>
+            <input 
+              type="checkbox" 
+              name="education" 
+              value="highSchoolDiploma"
+            > 
+            High School Diploma
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              name="education" 
+              value="someCollege"
+            > 
+            Some College
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              name="education" 
+              value="associate"
+            > 
+            Associate Degree
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              name="education" 
+              value="bachelor"
+            > 
+            Bachelor Degree
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Account Credentials -->
+      <fieldset>
+        <legend>Account Credentials</legend>
+        <div class="form-group">
+          <label for="username">Username <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            required 
+            aria-required="true" 
+            pattern="[A-Za-z]{5,10}" 
+            placeholder="5-10 letters"
+          >
+        </div>
+        <div class="form-group">
+          <label for="password">Password <span class="required">*</span></label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            required 
+            aria-required="true" 
+            minlength="6" 
+            placeholder="At least 6 characters"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Submission Button -->
+      <button type="submit" class="submit-button">Create my Account</button>
+    </form>
+  </main>
+
+  <footer id="page-bottom">
+    <p>
+      &copy; <span id="current-year"></span> &bull; Austin Taylor
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

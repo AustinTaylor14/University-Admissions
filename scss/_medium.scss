@@ -1,0 +1,40 @@
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Header becomes row-based */
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  /* Navigation in a row */
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .skip-link {
+    display: none; /* Hide skip link on medium screens */
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  main {
+    max-width: 80%;
+  }
+}

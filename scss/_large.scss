@@ -1,0 +1,25 @@
+@media (min-width: 1025px) {
+  .header-container {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  /* Navigation right-justified */
+  nav {
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  main {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}

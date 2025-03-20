@@ -1,0 +1,127 @@
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-color;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skip-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: $secondary-color;
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  color: $secondary-color;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 2px solid $secondary-color;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.required {
+  color: red; /* Contrast for required fields indicator */
+}
+
+/* Form elements */
+.form-group,
+.form-group-radio,
+.form-group-checkbox {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+.submit-button {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: darken($primary-color, 10%);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
